@@ -38,6 +38,7 @@
     <script>
     $('#grade-it').on('click', function() {
 
+$('#question-1').removeClass();
  var presName = $('#name').val();
      if (presName == 'Trump') {
      $('#question-1').addClass('has-success');
@@ -45,14 +46,16 @@
      $('#question-1').addClass('has-error');
    };
 
-   var numWives = $('#numba').val();
+$('#question-2').removeClass();
+   var numWives = $('#number').val();
 
-       if (numWives == 3) {
+       if (numWives == 'answer-3') {
          $('#question-2').addClass('has-success');
        } else {
          $('#question-2').addClass('has-error');
        };
 
+$('#question-3').removeClass();
        var russName = $('#name2').val();
            if (russName == 'Putin') {
            $('#question-3').addClass('has-success');
