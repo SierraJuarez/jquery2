@@ -31,9 +31,14 @@
       </div>
 
       <div class="form-group">
-        <input id="grade-it" type="button" value="Grade my quiz" class="btn btn-primary" />
+        <input id="grade-it" type="button" value="Grade my quiz!" class="btn btn-primary" />
       </div>
     </div>
+
+    <div class="hint">
+      <input id="give-hint" type="button" value="Show me the answers" class="btn btn-primary" />
+    </div>
+  </div>
 
     <script>
     $('#grade-it').on('click', function() {
@@ -64,6 +69,13 @@ $('#question-3').removeClass();
          };
 
  });
+
+$('#give-hint').on('click', function() {
+  $('#name') .val('Trump');
+  $('#number') .val('answer-3');
+  $('#name2') .val('Putin');
+});
+
     </script>
   </body>
 </html>
